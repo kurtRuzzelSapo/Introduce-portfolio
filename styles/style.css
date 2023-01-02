@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;1,300&family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+}
+body {
+	overflow-x: hidden;
+}
+/*Logo*/
+.logo {
+	color: black;
+	list-style-type: none;
+	display: flex;
+	margin-left: -200px;
+}
+.logo a,
+#Spotify {
+	text-decoration: none;
+	color: black;
+	font-size: 24px;
+}
+.fa-spotify {
+	font-size: 30px;
+	margin-right: 10px;
+}
+.fa-spotify,
+#Spotify a:hover {
+	transition: all 0s ease 0s;
+	box-sizing: border-box;
+	color: #1db954;
+	cursor: pointer;
+}
+
+nav {
+	background-color: #dadbf1;
+	display: flex;
+	justify-content: space-around;
+	padding: 20px;
+	align-items: center;
+}
+nav ul {
+	display: flex;
+	text-decoration: none;
+	list-style-type: none;
+	margin-right: -100px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: black;
+	margin-right: 90px;
+	font-size: 18px;
+	font-family: 'Varela Round';
+	position: relative;
+}
+
+nav ul li :after {
+	content: '';
+	height: 3px;
+	width: 0%;
+	background: black;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	transition: all 0.5s;
+}
+
+nav ul li :hover::after {
+	width: 100%;
+}
+#nav-prof {
+	left: 95%;
+	border-radius: 50%;
+	position: absolute;
+	width: 30px;
+}
+
+.fa-solid {
+	color: white;
+	width: 2px;
+
+	background-color: whitesmoke;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.buttons {
+	margin-right: -210px;
+	display: flex;
+}
+#Sign-in:hover {
+	color: black;
+	background-color: white;
+	border-color: black;
+}
+
+/*Searched*/
+.search-form {
+	height: 80vh;
+	background-color: #dadbf1;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.search-form h1 {
+	font-size: 98px;
+	font-weight: 90;
+	font-family: 'Varela Round';
+	margin-top: -250px;
+	margin-left: 160px;
+	animation-name: slide;
+	animation-duration: 1.4s;
+}
+@keyframes slide {
+	0% {
+		margin-left: 0px;
+	}
+	100% {
+		margin-left: 160px;
+	}
+}
+
+.search-form p {
+	font-size: 25px;
+	margin-top: 15px;
+	margin-left: 160px;
+	animation-name: slide;
+	animation-duration: 1.2s;
+}
+#search-header {
+	position: absolute;
+	top: 98%;
+	left: 2%;
+	font-size: 120px;
+}
+#profile-image {
+	position: absolute;
+	left: 55%;
+	top: 13%;
+	width: 30%;
+
+	animation-name: slide-img;
+	animation-duration: 1.2s;
+}
+
+@keyframes slide-img {
+	0% {
+		left: 100%;
+	}
+	100% {
+		left: 55%;
+	}
+}
+
+#description {
+	font-size: 19px;
+}
+input[type='text'] {
+	font-size: 20px;
+	margin-top: 20px;
+	width: 700px;
+	height: 61px;
+	box-sizing: 0px;
+	border: black solid 1px;
+
+	transition: all 0.3s ease-in-out;
+}
+input[type='text']::placeholder {
+	padding-left: 10px;
+}
+input[type='text']:hover {
+	box-shadow: 10px 10px #888888;
+}
+input[type='text']:focus {
+	box-shadow: 10px 10px #888888;
+}
+
+.arrow i {
+	font-size: 20px;
+	position: absolute;
+	padding: 40px 43%;
+	pointer-events: none;
+	color: black;
+	background-color: transparent;
+}
+
+/*grid element*/
+.container {
+	height: 1120px;
+	display: flex;
+	align-items: center;
+}
+.container .forproj {
+	overflow: hidden;
+}
+
+.caption p {
+	text-align: center;
+	font-size: 18px;
+	font-weight: 500;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#titleproject {
+	top: 899px;
+	left: 227px;
+	font-family: 'Lato';
+	color: white;
+	position: absolute;
+	font-size: 40px;
+	background-color: #1db954;
+}
+
+.item {
+	width: 400px;
+	background-color: white;
+	height: 200px;
+	border-radius: 10px;
+	margin-left: 200px;
+}
+.forproj {
+	height: auto;
+	width: 70%;
+	border: 2px solid #1db954;
+	overflow: hidden;
+	position: absolute;
+	top: 127%;
+	left: 15%;
+}
+.forproj img {
+	width: 100%;
+	display: block;
+	transition: transform 1.5s;
+}
+.forproj:hover img {
+	transform: scale(1.2);
+}
+/*branch*/
+.item h1 {
+	font-size: 26px;
+	font-weight: bolder;
+}
+.item p {
+	font-size: 24px;
+}
+.item a {
+	font-size: 20px;
+	text-decoration: none;
+}
+.item a:hover {
+	text-decoration: underline;
+}
+
+/*footer*/
+footer {
+	height: auto;
+	left: 0;
+	right: 0;
+}
+.main-footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	border-top: 1.5px solid #dadbf1;
+}
+.social-icons {
+	font-size: 30px;
+	display: flex;
+	list-style-type: none;
+	text-decoration: none;
+	align-items: center;
+	justify-content: center;
+	margin: 2rem 0rem 2rem 0rem;
+}
+.social-icons li {
+	margin: 0 20px;
+}
+.social-icons a i {
+	color: #4b5563;
+	font-size: 30px;
+	transition: all 0.3s;
+}
+.sign {
+	font-weight: bolder;
+	text-align: center;
+	padding-bottom: 1rem;
+	font-size: 1rem;
+}
+/*footer-icons*/
+.fa-facebook:hover {
+	color: blue;
+}
+.fa-youtube:hover {
+	color: red;
+}
+.fa-twitter:hover {
+	color: #00acee;
+}
+.fa-instagram:hover {
+	color: #833ab4;
+}
+.fa-github:hover {
+	color: black;
+}
+.fa-linkedin:hover {
+	color: #0e76a8;
+}
+
+/*END FOOTER ICONS */
+/*credits*/
+.credits {
+	color: white;
+	float: right;
+}
+.credits pre {
+	font-size: 20px;
+	margin-right: 80px;
+}
+.fab {
+	font-size: 20px;
+}
+/*ICON LEFT*/
+
+.fa-weibo {
+	position: absolute;
+	left: 70px;
+	font-size: 90px;
+}
+.fa-d-and-d {
+	position: absolute;
+	left: 70px;
+	font-size: 90px;
+}
+.fa-creative-commons-sampling {
+	position: absolute;
+	left: 70px;
+	font-size: 90px;
+}
+
+/*END ICON LEFT*/
+
+/*ICON RIGHT*/
+.fa-cotton-bureau {
+	position: absolute;
+	right: 600px;
+	font-size: 90px;
+}
+.fa-gitlab {
+	position: absolute;
+	right: 600px;
+	font-size: 90px;
+}
+.fa-fly {
+	position: absolute;
+	right: 600px;
+	font-size: 90px;
+}
+/*javascript*/
+.lightMode {
+	background-color: black;
+	color: white;
+}
+.lightMode .nav-bar {
+	background-color: black;
+	color: white;
+}
